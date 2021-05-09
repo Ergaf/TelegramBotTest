@@ -53,6 +53,7 @@ public class Bot extends TelegramLongPollingBot {
                     }
 
                 }
+                System.out.println("автор: "+message.getFrom().getFirstName()+", текст: "+message.getText());
                 break;
         }
     }
