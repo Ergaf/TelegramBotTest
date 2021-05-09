@@ -11,7 +11,7 @@ public class GetInfo {
         String temp = "температура в кельвинах: "+city.getMain().getTemp()+"\n";
         String tempFeels = "ощущаеться как : "+city.getMain().getFeels_like()+"\n";
         String pressure = "давление в hPa : "+city.getMain().getPressure()+"\n";
-        String humidity = "влажность : "+city.getMain().getPressure()+"%\n";
+        String humidity = "влажность : "+city.getMain().getHumidity()+"%\n";
         String windSpeed = "скорость ветра в м/с : "+city.getWind().getSpeed()+"\n";
         String all = main+country+sky+temp+tempFeels+pressure+humidity+windSpeed;
         return all;
