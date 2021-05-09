@@ -30,6 +30,7 @@ public class Bot extends TelegramLongPollingBot {
             command = message.getText().substring(0, 12);
             probableCity = message.getText().substring(12);
         }
+        System.out.println("автор: "+message.getFrom().getFirstName()+", текст: "+message.getText());
 
         switch(message.getText()) {
             case "/help":
@@ -51,9 +52,7 @@ public class Bot extends TelegramLongPollingBot {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-
                 }
-                System.out.println("автор: "+message.getFrom().getFirstName()+", текст: "+message.getText());
                 break;
         }
     }
